@@ -1,0 +1,1028 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #1f1e1f;
+}
+
+/**************** Menu ********************/
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    padding-left: 30rem;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.content .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.content .list-menu li a:hover{
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+    transition: all 200ms ease-in;
+}
+
+/**************** first-section ********************/
+
+.first-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29 ,0.8), rgba(29, 29, 29 ,0.8)), url(./img/fundopizza.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section h1 {
+    color: #ffc506;
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.first-section h2 {
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 3rem;
+}
+
+.btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+    transition: all 400ms ease-in;
+}
+
+.btn button:hover {
+    border: 1px solid #ffc506;
+    background-color: transparent;
+    color: #ffc506;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/**************** SOBRE NÓS ********************/
+.sobre {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentsobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre h2 {
+    font-size: 6rem;
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 1rem;
+}
+
+.contentsobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 600px;
+}
+
+/**************** MENU ********************/
+.menu {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(15, 15, 15, 0.8)), url(/img/fundomenu.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu h2 {
+    font-size: 5rem;
+    font-family: 'Indie Flower', cursive;
+    color: #e6e6e6;
+    text-transform: uppercase;
+}
+
+.itens-menu {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-menu .info {
+    background-color: rgb(238, 238, 228);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.itens-menu .info h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.itens-menu .info h4 {
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.itens-menu .item {
+    background-color: #df7d0d;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #2e0808;    
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-menu img{
+    width: 100%;
+    height: 200px;
+}
+
+.itens-menu .info .pedir {
+    width: 150px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: #ffc506;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+}
+
+.itens-menu .info .pedir:hover {
+    background-color: #5e5e5e;
+    color: white;
+}
+
+
+/**************** CONTATOS ********************/
+
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h3 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.contatos-secao {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i {
+    margin-right: 1rem;
+}
+
+.contatos-secao div {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.contatos-secao div:hover {
+    color: #ffc506;
+}
+
+/**************** CARRINHO ********************/
+
+body {
+    background-color: #E3E7E8;
+    font-family: system-ui;
+}
+
+.container{
+    width: 1900px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+header nav span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 100px;
+}
+.list .item{
+    text-align: center;
+    background-color: #ecaf2c;
+    padding: 20px;
+    box-shadow: 0 50px 50px #020706;
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.card{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: #E8BC0E;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+
+/**************** FOOTER ********************/
+
+footer {
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+    }
+
+    .sobre img {
+        width: 600px;
+        margin-left: -2px;
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .contatos-secao div {
+        margin: 2rem;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .contatos-secao div {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 870px) {
+    html {
+        font-size: 45%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .itens-menu {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 35%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list-menu{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+    }
+
+    .content.on .list-menu li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .content.on .list-menu li a {
+        font-size: 3rem;
+    }
+
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+    
+    .itens-menu {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .conteudo-principal h1 {
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .conteudo-principal h2 {
+        font-size: 2rem;
+    }
+
+    .sobre img {
+        width: 400px;
+        height: 250px;
+        margin-left: 10px;
+    }
+
+    .sobre p {
+        text-align: center;
+        width: 400px;
+    }
+
+    .contatos-secao {
+        width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+    }
+
+    .btn button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 395px) {
+    .sobre img {
+        width: 250px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .contentsobre p {
+        text-align: center;
+        width: 250px;
+    }
+
+    .itens-menu {
+        width: 50%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .itens-menu img {
+        width: 80%;
+        height: auto;
+    }
+
+    .itens-menu .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .itens-menu .info {
+        width: 100%;
+        height: 150%;
+    }
+
+    .itens-menu .info h4 {
+        grid-template-columns: 93px 150px;
+    }
+
+    .itens-menu .info .pedir {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Estilos para a tabela de detalhes */
+.pedidos-lista {
+ 
+    background-color: #1f1e1f;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+    
+}
+
+.detalhe {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 15px;
+    min-width: 400px;
+    background-color: white;
+    margin-right: 25px;
+}
+
+.itens {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 15px;
+    min-width: 400px;
+    background-color: white;
+}
+
+.detalhe th{
+	background-color: #E8BC0E;
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+
+	
+}
+
+.itens th{
+	background-color: #ffff80;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+	
+}
+
+
+
+
+
+.detalhe thead tr {
+	background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.detalhe th, table td {
+    padding: 12px 15px;
+     margin-right: 25px;
+}
+
+.detalhe tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+    
+}
+
+.detalhe tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+
+
+
+.itens thead tr {
+	background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.itens th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.itens tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.itens tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+
+
+
+
+
+.itens tbody tr:last-of-type {
+    border-bottom: 3px solid #009879;
+}
+
+detalhe tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.content-itens {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+   
+    padding-left: 30rem;
+}
+
+.content-itens .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.content-itens .list-menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.content-itens .list-menu li a:hover{
+    background-color: #3333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+    transition: all 200ms ease-in;
+}
+
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+    }
+
+    .content-itens {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+    }
+
+    .sobre img {
+        width: 600px;
+        margin-left: -2px;
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .contatos-secao div {
+        margin: 2rem;
+    }
+
+}
+
+
+@media (max-width: 870px) {
+    html {
+        font-size: 45%;
+    }
+
+    .content-itens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .itens-menu {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 35%;
+    }
+
+    .content-itens {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content-itens .list-menu{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content-itens.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-itens.on .logo {
+        display: none;
+    }
+
+    .content-itens.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content-itens.on .list-menu {
+        display: block;
+    }
+
+    .content-itens.on .list-menu li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-itens.on .list-menu li a {
+        font-size: 3rem;
+    }
+
+    .content-itens.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content-itens.on .menu-toggle .one {
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+
+    .content-itens.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+    
+    .itens-menu {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+    }
+}
+
+.botao{
+	width: 150px;
+    height:20px;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+  
+}
+
+.botao-voltar{
+	width: 300px;
+    height:200px;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
